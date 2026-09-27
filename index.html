@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Algoritmos - Blockly</title>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <div>
+            <h1>Algoritmos</h1>
+            <span>Programación visual</span>
+        </div>
+
+
+        <div class="acciones">
+
+            <button
+                id="btn-limpiar"
+                class="secundario"
+            >
+                Limpiar
+            </button>
+
+            <button id="btn-ejecutar">
+                ▶ Ejecutar
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- ============================================= -->
+        <!-- BLOCKLY -->
+        <!-- ============================================= -->
+
+        <section id="editor">
+
+            <div id="blocklyDiv"></div>
+
+        </section>
+
+
+
+        <!-- ============================================= -->
+        <!-- PANEL DERECHO -->
+        <!-- ============================================= -->
+
+        <aside>
+
+            <section class="panel">
+
+                <h2>Salida</h2>
+
+                <div id="salida">
+                    Ejecuta tu algoritmo...
+                </div>
+
+            </section>
+
+
+            <section class="panel codigo">
+
+                <h2>Python</h2>
+
+                <p class="ayuda">
+                    Solo lectura
+                </p>
+
+                <pre id="codigo-python"></pre>
+
+            </section>
+
+        </aside>
+
+    </main>
+
+
+    <script
+        type="module"
+        src="/src/main.js"
+    ></script>
+
+</body>
+
+</html>

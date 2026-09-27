@@ -1,0 +1,12 @@
+services:
+
+  algoritmos:
+    build:
+      context: .
+
+    container_name: algoritmos-blockly
+
+    restart: unless-stopped
+
+    ports:
+      - "8086:80"
